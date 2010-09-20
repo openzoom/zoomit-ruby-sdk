@@ -1,0 +1,46 @@
+= zoomit
+
+API wrapper for the Live Labs zoom.it API
+
+== Installation
+
+  gem install zoomit
+  
+== Usage
+
+  require 'zoomit'
+  @zoomit = Zoomit::Content.create('http://www.example.org')
+  => <#Zoomit::Response dzi=<#Zoomit::Response height=840 tileFormat="png" tileOverlap=1 tileSize=254 url="http://cache.zoom.it/content/7nA.dzi" width=1024> embedHtml="<script src=\"http://zoom.it/7nA.js?width=auto&height=400px\"></script>" failed=false id="7nA" progress=1 ready=true shareUrl="http://zoom.it/7nA" url="http://www.mit2m.de/">
+  @zoomit.shareURL
+  => "http://zoom.it/7nA"
+  @zoomit.dzi.tileFormat
+  => "png"
+  
+To search for zoom.it content by id, use Zoomit::Content.find(id)
+
+  @zoomit = Zoomit::Content.find('7nA')
+  => <#Zoomit::Response dzi=<#Zoomit::Response height=840 tileFormat="png" tileOverlap=1 tileSize=254 url="http://cache.zoom.it/content/7nA.dzi" width=1024> embedHtml="<script src=\"http://zoom.it/7nA.js?width=auto&height=400px\"></script>" failed=false id="7nA" progress=1 ready=true shareUrl="http://zoom.it/7nA" url="http://www.mit2m.de/">
+  
+To search by url use Zoomit::Content.find_by_url(url)
+  
+  @zoomit = Zoomit::Content.find_by_url('http://www.mit2m.de')
+  => <#Zoomit::Response dzi=<#Zoomit::Response height=840 tileFormat="png" tileOverlap=1 tileSize=254 url="http://cache.zoom.it/content/7nA.dzi" width=1024> embedHtml="<script src=\"http://zoom.it/7nA.js?width=auto&height=400px\"></script>" failed=false id="7nA" progress=1 ready=true shareUrl="http://zoom.it/7nA" url="http://www.mit2m.de/">
+
+== Todo
+
+* Rubyfy response hash keys
+* Documentation
+
+== Note on Patches/Pull Requests
+ 
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a
+  future version unintentionally.
+* Commit, do not mess with rakefile, version, or history.
+  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
+
+== Copyright
+
+Copyright (c) 2010 Tobias Matthies. See LICENSE for details.
