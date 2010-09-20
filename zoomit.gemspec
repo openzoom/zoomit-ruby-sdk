@@ -34,7 +34,8 @@ Gem::Specification.new do |s|
     "spec/spec_helper.rb",
     "spec/zoomit/content_spec.rb",
     "spec/zoomit/response_spec.rb",
-    "spec/zoomit_spec.rb"
+    "spec/zoomit_spec.rb",
+    "zoomit.gemspec"
   ]
   s.homepage = %q{http://github.com/tobmatth/zoomit}
   s.require_paths = ["lib"]
