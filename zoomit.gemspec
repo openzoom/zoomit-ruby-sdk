@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tobias Matthies"]
-  s.date = %q{2010-09-20}
+  s.date = %q{2010-09-21}
   s.description = %q{API wrapper for the Live Labs zoom.it API}
   s.email = %q{tm@mit2m.de}
   s.extra_rdoc_files = [
@@ -60,19 +60,9 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.5.0.pre3"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
-      s.add_development_dependency(%q<rspec>, [">= 2.0.0.beta.22"])
-      s.add_development_dependency(%q<webmock>, [">= 1.3.5"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.5.0.pre3"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
     else
       s.add_dependency(%q<httparty>, [">= 0.6.1"])
       s.add_dependency(%q<hashie>, [">= 0.4.0"])
-      s.add_dependency(%q<rspec>, [">= 2.0.0.beta.22"])
-      s.add_dependency(%q<webmock>, [">= 1.3.5"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.5.0.pre3"])
-      s.add_dependency(%q<rcov>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 2.0.0.beta.22"])
       s.add_dependency(%q<webmock>, [">= 1.3.5"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
@@ -82,11 +72,6 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<httparty>, [">= 0.6.1"])
     s.add_dependency(%q<hashie>, [">= 0.4.0"])
-    s.add_dependency(%q<rspec>, [">= 2.0.0.beta.22"])
-    s.add_dependency(%q<webmock>, [">= 1.3.5"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.5.0.pre3"])
-    s.add_dependency(%q<rcov>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 2.0.0.beta.22"])
     s.add_dependency(%q<webmock>, [">= 1.3.5"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
